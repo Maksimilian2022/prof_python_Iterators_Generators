@@ -74,10 +74,8 @@ def nested_list_generate2():
 			if i > b:
 				for element4 in list_for_nested_elements:
 					break_counter = 0
-					print(element4)
+					yield element4
 					break_counter += 1
 					if break_counter == len(list_for_nested_elements):
 						break
-nested_list_generate2()
-# for i in nested_list_generate():
-# 	print(i)
+print(nested_list_generate2())
